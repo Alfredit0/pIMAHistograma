@@ -1,0 +1,61 @@
+object frmImagen: TfrmImagen
+  Left = 275
+  Height = 376
+  Top = 168
+  Width = 434
+  Caption = 'IMAGEN'
+  ClientHeight = 356
+  ClientWidth = 434
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.4.0.4'
+  object ScrollBox1: TScrollBox
+    Left = 8
+    Height = 320
+    Top = 8
+    Width = 347
+    HorzScrollBar.Page = 342
+    HorzScrollBar.Visible = False
+    VertScrollBar.Page = 315
+    VertScrollBar.Visible = False
+    ClientHeight = 316
+    ClientWidth = 343
+    TabOrder = 0
+    object Image1: TImage
+      Left = 0
+      Height = 315
+      Top = 0
+      Width = 342
+      Stretch = True
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 384
+    top = 296
+    object mnuArchivo: TMenuItem
+      Caption = 'Archivo'
+      object mnuArchivoAbrir: TMenuItem
+        Caption = 'Abrir'
+        OnClick = mnuArchivoAbrirClick
+      end
+      object mnuArchivoGuardar: TMenuItem
+        Caption = 'Guardar'
+      end
+      object mnuArchivoSalir: TMenuItem
+        Caption = 'Salir'
+        OnClick = mnuArchivoSalirClick
+      end
+    end
+    object mnuHerramientas: TMenuItem
+      Caption = 'Herramientas'
+      object mnuHerrHistograma: TMenuItem
+        Caption = 'Histograma'
+        OnClick = mnuHerrHistogramaClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 384
+    top = 232
+  end
+end
