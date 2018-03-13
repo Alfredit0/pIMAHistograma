@@ -1,7 +1,7 @@
 object frmImagen: TfrmImagen
-  Left = -8
+  Left = 315
   Height = 706
-  Top = -8
+  Top = 7
   Width = 1366
   Caption = 'IMAGEN'
   ClientHeight = 686
@@ -28,6 +28,12 @@ object frmImagen: TfrmImagen
       Width = 342
       Stretch = True
     end
+  end
+  object imgHisto: TImage
+    Left = 8
+    Height = 232
+    Top = 416
+    Width = 600
   end
   object MainMenu1: TMainMenu
     left = 384
